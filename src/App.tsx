@@ -102,7 +102,8 @@ const App: React.FC = () => {
                 paginator rows={rowsPerPage} lazy totalRecords={totalRecords}
                 onPage={onPageChange} selectionMode="multiple" dataKey="id"
             >
-                <Column selectionMode="multiple" headerStyle={{ width: '3em' }} header={selectAllTemplate} />
+                <Column selectionMode="multiple" headerStyle={{ width: '3em' }}/>
+                <Column header={selectAllTemplate} />
                 <Column field="title" header="Title" />
                 <Column field="place_of_origin" header="Place of Origin" />
                 <Column field="artist_display" header="Artist" />
